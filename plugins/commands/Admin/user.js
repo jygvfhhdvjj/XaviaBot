@@ -1,3 +1,4 @@
+/*
 const config = {
     name: "user",
     description: "ban/unban a user",
@@ -34,32 +35,3 @@ async function onCall({ message, args, getLang, data }) {
                 type == "message_reply" ? [messageReply.senderID] : null;
 
         if (!targetIDs) return message.reply(getLang("missingTarget"));
-
-        const members = data?.thread?.info?.members;
-        if (!members) return message.reply(getLang("noData"));
-
-        if (query == "ban") {
-            for (const id of targetIDs) {
-                if (members.find(e => e.userID == id))
-                    members.find(e => e.userID == id).banned = true;
-            }
-        } else {
-            for (const id of targetIDs) {
-                if (members.find(e => e.userID == id))
-                    members.find(e => e.userID == id).banned = false;
-            }
-        }
-
-        await global.controllers.Threads.updateInfo(message.threadID, { members });
-        message.reply(getLang("success"));
-    } catch (e) {
-        console.error(e);
-        message.reply(getLang("error"));
-    }
-}
-
-export default {
-    config,
-    langData,
-    onCall
-}
