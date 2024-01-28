@@ -1,12 +1,12 @@
 const config = {
-    name: "sicbo",
+    name: "مراهنة",
     _name: {
         "vi_VN": "taixiu"
     },
-    aliases: ["taixiu", "tx"],
+    aliases: ["taixiu", "tx","مراهنه"],
     description: "Play sicbo with bot.",
     usage: "[tai/xiu] [bet] | [big/small] [bet] (default bet is 50)",
-    credits: "XaviaTeam",
+    credits: "XaviaTeam | KG SOFT",
     extra: {
         minbet: 50
     }
@@ -41,9 +41,9 @@ const langData = {
         "sicbo.userNoData": "البيانات الخاصة بك ليست جاهزة بعد.",
         "sicbo.invalidChoice": "خيار غير صالح ، الخيارات المتاحة:\n{small}\n{big}",
         "sicbo.notEnoughMoney": "مال غير كاف.",
-        "sicbo.minMoney": "الحد الأدنى للرهان هو {min} XC.",
-        "sicbo.win": "{dices}\nلقد فزت {money} XC.",
-        "sicbo.lose": "{dices}\nلقد خسرت {money} XC.",
+        "sicbo.minMoney": "الحد الأدنى للرهان هو {min} KC.",
+        "sicbo.win": "{dices}\nلقد فزت {money} KC.",
+        "sicbo.lose": "{dices}\nلقد خسرت {money} KC.",
         "sicbo.result_1": "صغير",
         "sicbo.result_2": "كبير",
         "sicbo.result_0": "ثلاث مرات",
