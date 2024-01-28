@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "mods",
     aliases: ["moderators"],
     version: "1.0.1",
