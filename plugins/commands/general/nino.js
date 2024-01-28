@@ -1,8 +1,8 @@
 const config = {
     name: "نينو",
     version: "1.1.0",
-    description: "talk with nino",
-    usage: "[text]",
+    description: "دردش مع نينو ",
+    usage: "[أي نص]",
     cooldown: 3,
     permissions: [0, 1, 2],
     credits: "XaviaTeam"
@@ -28,12 +28,12 @@ const langData = {
         "error": "Có lỗi xảy ra, vui lòng thử lại sau"
     },
     "ar_SY": {
-        "on": "Nino is now on",
-        "off": "Nino is now off",
+        "on": "تم تشغيل نينو 😃",
+        "off": "تم إيقاف نينو  😴",
         "alreadyOn": "Nino is already on",
         "alreadyOff": "Nino is already off",
-        "missingInput": "الرجاء إدخال المحتوى الذي تريد الدردشة مع نينو",
-        "noResult": "نينو لا تفهم ما تقول :(",
+        "missingInput": "فــشفاش نــينو 🐔🍹",
+        "noResult": "نينو لم يفهمك 🐸(",
         "error": "لقد حدث خطأ، رجاء أعد المحاولة لاحقا"
     }
 }
@@ -85,3 +85,5 @@ export default {
     langData,
     onCall
 }
+
+
