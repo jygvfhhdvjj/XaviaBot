@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "choose",
     usage: "option1 | option2 | option3 | ...",
     description: "Choose one of the options",
