@@ -1,3 +1,4 @@
+
 import { join } from "path";
 import { loadImage, createCanvas } from "canvas";
 
@@ -6,7 +7,7 @@ export const config = {
     version: "0.0.1-xaviabot-port-refactor",
     credits: "kudos",
     description: "",
-    usage: "[تاغ]",
+    usage: "[@تاغ]",
     cooldown: 5
 };
 
@@ -34,41 +35,3 @@ export async function makeImage({ one, two }) {
     const canvas = createCanvas(template.width, template.height);
     const ctx = canvas.getContext("2d");
 
-    ctx.drawImage(template, 0, 0, canvas.width, canvas.height);
-    ctx.drawImage(avatarOneCircle, 200, 23, 60, 60);
-    ctx.drawImage(avatarTwoCircle, 136, 40, 60, 60);
-
-    const pathImg = join(global.cachePath, `marry_${one}_${two}.png`);
-    const imageBuffer = canvas.toBuffer();
-
-    global.deleteFile(avatarPathOne);
-    global.deleteFile(avatarPathTwo);
-
-    global.writeFile(pathImg, imageBuffer);
-    return pathImg;
-}
-
-export async function onCall({ message }) {
-    const { senderID, mentions } = message;
-    const mention = Object.keys(mentions);
-    if (!mention[0]) return message.reply("كدي تاقي تعيسة/تعيس الحظ 🐸🤏.");
-    else {
-        const one = senderID, two = mention[0];
-        return makeImage({ one, two })
-            .then(async path => {
-                await message.reply({
-                    body: "هييع.. أبشر 🐸✊..  ألف مليون مبروك بيت مال و عيال!",
-                    attachment: global.reader(path)
-                }).catch(e => {
-                    message.reply("حصلت مشكلة، كدي حاول تاني.");
-                    console.error(e);
-                });
-
-                global.deleteFile(path);
-            })
-            .catch(e => {
-                message.reply("حدث خطأ، حاول مرة أخرى..");
-                console.error(e);
-            });
-    }
-}
