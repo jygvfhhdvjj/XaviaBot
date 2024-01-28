@@ -1,11 +1,11 @@
 const config = {
-    name: "pending",
+    name: "معلقة",
     description: "Approve or deny a pending message",
     usage: "",
     cooldown: 3,
     permissions: [2],
-    credits: "XaviaTeam",
-    isAbsolute: true
+    credits: "XaviaTeam | KG SOFT",
+    isAbsolute: false
 }
 
 const langData = {
@@ -37,10 +37,10 @@ const langData = {
         "invalidIndexes": "فهارس غير صالحة",
         "successDeny": "تم الرفض بنجاح {success} مجموعة(محموعات)",
         "failDeny": "لا يمكن إنكار بعض الجماعات:\n{fail}",
-        "denied": "آسف ، تم رفض مجموعتك",
+        "denied": "آسف ، تم رفض مجموعتك \n لمذيد من التفاصيل راسل المطور حساب المطور \n\n https://www.facebook.com/profile.php?id=100091587772448",
         "successApprove": "تمت الموافقة بنجاح {success} مجموعة(مجموعات)",
         "failApprove": "لا يمكن الموافقة على بعض المجموعات:\n{fail}",
-        "approved": "تهانينا ، تمت الموافقة على مجموعتك\n{prefix}تساعد في رؤية قائمة الأوامر",
+        "approved": "تهانينا ، تمت الموافقة على مجموعتك",
         "pendingThreadList": "قائمة المواضيع المعلقة:\n{pendingThread}\n\nالرد بالصيغة التالية:\nللرفض: رفض <index/all>\nليوافق: يوافق <index/all>",
         "pendingThreadListEmpty": "لا توجد مواضيع معلقة",
         "error": "حصل خطأ. الرجاء المحاوله مرة اخرى"
