@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "language",
     aliases: ["lang"],
     description: "choose bot language for group",
