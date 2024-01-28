@@ -1,5 +1,5 @@
 const config = {
-    name: "quote",
+    name: "مقولة",
     description: "Anime Quotes!",
     usage: "[character]",
     cooldown: 3,
