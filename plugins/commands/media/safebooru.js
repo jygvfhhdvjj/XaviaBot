@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "safebooru",
     aliases: ["sb"],
     description: "Get images from safebooru",
