@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "source",
     aliases: ["code", "about"],
     description: "Show source code of bot"
