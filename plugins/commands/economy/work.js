@@ -5,10 +5,10 @@ const _1HOURS = 1 * 60 * 60 * 1000;
 const _30MINUTES = 30 * 60 * 1000;
 
 const config = {
-    name: "work",
-    aliases: ["wk"],
-    description: "Work to earn money",
-    credits: "XaviaTeam",
+    name: "عمل",
+    aliases: ["wk","شغل"],
+    description: "اشتغل و أصرف قروش",
+    credits: "XaviaTeam | KG SOFT",
     extra: {
         min: 200,
         max: 1000,
@@ -32,7 +32,7 @@ const langData = {
     "ar_SY": {
         "work.selfNoData": "البيانات الخاصة بك ليست جاهزة",
         "work.alreadyWorked": "لقد عملت ، يمكنك العمل مرة أخرى لاحقًا {time}",
-        "work.successfullyWorked": "لقد عملت وكسبت {amount}XC",
+        "work.successfullyWorked": "لقد عملت وكسبت {amount}KC",
         "work.failed": "باءت بالفشل"
     }
 }
@@ -70,3 +70,5 @@ export default {
     langData,
     onCall
 }
+
+
