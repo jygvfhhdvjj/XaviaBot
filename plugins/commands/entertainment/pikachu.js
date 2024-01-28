@@ -1,5 +1,5 @@
 const config = {
-    name: "pikachu",
+    name: "بيكاتشو",
     description: "pikachu meme maker",
     usage: "[text]",
     cooldown: 3,
