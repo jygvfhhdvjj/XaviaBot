@@ -1,5 +1,5 @@
 const config = {
-    name: "wallpaper",
+    name: "عشوائية",
     aliases: ["anhnen", "wp"],
     credits: "XaviaTeam"
 }
