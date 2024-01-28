@@ -1,10 +1,10 @@
 const config = {
-    name: "balance",
-    aliases: ["bal", "money"],
-    description: "Check user's/self money",
+    name: "رصيدي",
+    aliases: ["bal", "money","ثروتي"],
+    description: "تفقد رصيدك الحالي",
     usage: "<reply/tag/none>",
     cooldown: 5,
-    credits: "XaviaTeam"
+    credits: "XaviaTeam | KG SOFT"
 }
 
 const langData = {
@@ -21,7 +21,7 @@ const langData = {
     "ar_SY": {
         "balance.userNoData": "المستخدم غير موجود / غير جاهز",
         "balance.selfNoData": "البيانات الخاصة بك ليست جاهزة",
-        "balance.result": "فائض: {money}XC"
+        "balance.result": "رصيدك الحالي هو: {money}KC"
     }
 }
 
@@ -39,7 +39,7 @@ async function onCall({ message, getLang }) {
 
         for (const TSenderID in mentions) {
             userBalance = await Users.getMoney(TSenderID);
-            msg += `${mentions[TSenderID].replace(/@/g, '')}: ${global.addCommas(userBalance || 0)}XC\n`;
+            msg += `${mentions[TSenderID].replace(/@/g, '')}: ${global.addCommas(userBalance || 0)}KC\n`;
         }
 
         return message.reply(msg);
@@ -56,3 +56,5 @@ export default {
     langData,
     onCall
 }
+
+
