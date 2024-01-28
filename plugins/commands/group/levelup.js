@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "levelup",
     aliases: ["lvlup"],
     permissions: [1, 2],
