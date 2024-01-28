@@ -1,5 +1,5 @@
 const config = {
-    name: "hentai",
+    name: "هنتاي",
     description: "hentai images",
     usage: "[category]",
     cooldown: 3,
