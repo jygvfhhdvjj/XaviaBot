@@ -1,4 +1,5 @@
-const config = {
+
+/*const config = {
     name: "communism",
     description: "communism image creator",
     usage: "[@mention/reply] [text]",
@@ -34,24 +35,3 @@ async function onCall({ message, getLang }) {
         }, async (error, res, data) => {
             if (error) {
                 console.error(error);
-                return message.reply(getLang("error"));
-            }
-
-            const communism = await global.getStream(`${global.xva_api.popcat}/communism?image=${res.data.url}`);
-
-            return message.reply({
-                attachment: communism
-            });
-        })
-
-    } catch (e) {
-        console.error(e);
-        return message.reply(getLang("error"));
-    }
-}
-
-export default {
-    config,
-    langData,
-    onCall
-}
