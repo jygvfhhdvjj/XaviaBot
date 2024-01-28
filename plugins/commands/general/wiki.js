@@ -2,11 +2,11 @@ import wiki from 'wikijs'
 
 const config = {
     name: "ويكيبيديا",
-    description: "search on wikipedia",
+    description: "البحث في ويكيبيديا",
     usage: "[keyword]",
     cooldown: 3,
     permissions: [0, 1, 2],
-    credits: "XaviaTeam"
+    credits: "XaviaTeam | KG SOFT"
 }
 
 const langData = {
@@ -33,15 +33,15 @@ function getSystemLanguage() {
     if (supportedLanguages.includes(global.config.LANGUAGE)) {
         return global.config.LANGUAGE;
     } else {
-        return "en_US";
+        return "ar_SY";
     }
 }
 
-async function onCall({ message, args, getLang, extra, data, userPermissions, prefix }) {
+async function onCall({ message, args, getLang }) {
     const input = args.join(" ");
     if (!input) return message.reply(getLang("missingInput"));
 
-    wiki.default({ apiUrl: `https://${getSystemLanguage().split("_")[0]}.wikipedia.org/w/api.php` })
+    wiki({ apiUrl: `https://${getSystemLanguage().split("_")[0]}.wikipedia.org/w/api.php` })
         .find(input)
         .then(async (page) => {
             try {
@@ -63,3 +63,5 @@ export default {
     langData,
     onCall
 }
+
+
