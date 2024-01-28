@@ -1,10 +1,10 @@
 const config = {
-    name: "biden",
-    description: "biden meme maker",
-    usage: "[text]",
+    name: "بايدن",
+    description: "صانع ميم جو بايدن",
+    usage: "[أي نص]",
     cooldown: 3,
     permissions: [0, 1, 2],
-    credits: "XaviaTeam"
+    credits: "XaviaTeam | KG SOFT"
 }
 
 const langData = {
@@ -42,3 +42,6 @@ export default {
     langData,
     onCall
 }
+
+
+
