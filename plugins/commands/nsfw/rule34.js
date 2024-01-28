@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "rule34",
     description: "Rule34 search",
     usage: "[keyword]",
