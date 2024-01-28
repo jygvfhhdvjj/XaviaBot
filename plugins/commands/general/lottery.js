@@ -1,4 +1,4 @@
-import { config as lotteryConfig } from "../../lottery.js";
+/*import { config as lotteryConfig } from "../../lottery.js";
 
 const config = {
     name: "lottery",
