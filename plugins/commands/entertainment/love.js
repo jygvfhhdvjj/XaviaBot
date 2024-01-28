@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import { join } from 'path';
 
 const config = {
-    name: "love",
+    name: "حب",
     description: "Love banner with a user",
     usage: "<@mention/reply>",
     credits: "XaviaTeam",
