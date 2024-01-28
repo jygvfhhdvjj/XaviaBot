@@ -1,5 +1,5 @@
 const config = {
-    name: "sadcat",
+    name: "قط",
     description: "sadcat meme maker",
     usage: "[text]",
     cooldown: 3,
