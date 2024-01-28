@@ -1,7 +1,7 @@
 const config = {
-    name: "data",
+    name: "بيانات",
     permissions: [2],
-    credits: "XaviaTeam",
+    credits: "XaviaTeam | KG SOFT",
     isAbsolute: true
 }
 
@@ -94,7 +94,7 @@ async function onCall({ message, args, getLang }) {
     const query = args[0]?.toLowerCase();
 
     switch (query) {
-        case 'update':
+        case 'تحديث':
             {
                 if (global.config.DATABASE == "JSON") global.updateJSON();
                 else if (global.config.DATABASE == "MONGO") await global.updateMONGO();
@@ -102,7 +102,7 @@ async function onCall({ message, args, getLang }) {
                 message.reply(getLang("updateSuccess"));
                 break;
             }
-        case 'reset':
+        case 'تعيين':
             {
                 message
                     .reply(getLang("chooseReset"))
