@@ -1,5 +1,5 @@
 const config = {
-    name: "anime",
+    name: "انمي",
     description: "anime images",
     usage: "[category]",
     cooldown: 3,
