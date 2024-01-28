@@ -1,12 +1,12 @@
 const config = {
-    name: "out",
-    aliases: ["leave"],
-    description: "Leave the group/all groups, please note that the out all will not include the message request/spam group",
+    name: "خروج",
+    aliases: ["leave","مغادرة"],
+    description: "خروج من كل المجموعات أو من مجموعة معينة. ",
     usage: "[groupID/all]",
     cooldown: 5,
     permissions: [2],
-    credits: "XaviaTeam",
-    isAbsolute: true
+    credits: "XaviaTeam|KG SOFT",
+    isAbsolute: false
 }
 
 const langData = {
