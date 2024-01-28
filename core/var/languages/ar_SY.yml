@@ -48,10 +48,10 @@ handlers.commands.noPermission: "انت غير مصرح لك لاستخدام."
 handlers.default.error: "حدث خطأ: {error}"
 
 # resend
-plugins.resend.noMessage: "• {author} ازلت للتو رسالة معينة."
-plugins.resend.unsendNoMessageButAttach: "• {author} لم يرسل {attachmentsCount} المرفقات:"
+plugins.resend.noMessage: "• هووي عاينو الفضيحة شوفو {author} مسح شنو 🙆‍♂️: "
+plugins.resend.unsendNoMessageButAttach: "• {author} عاينو {attachmentsCount} مسح شنو 🙆‍♂️👇:"
 plugins.resend.unsendMessageAndAttach: "• {author} قمت بالغاء ارسال رسالة مع {attachmentsCount} المرفقات:\n\n{message}"
-plugins.resend.unsendMessage: "• {author} أزلت للتو رسالة:\n\n{message}"
+plugins.resend.unsendMessage: "• {author}  عاينو مسحت شنو :\n\n{message}"
 
 # Database
 database.mongo_url_not_found: "متغير البيئة غير موجود MONGO_URL"
@@ -67,21 +67,21 @@ plugins.events.change_thread_image.reversed_t: "[ ANTI ALERT ]\nغير مسمو�
 plugins.events.change_thread_image.setNewImage: "\nغير مسموح بتغيير صور المجموعة ولكن نظرًا لعدم وجود صور قديمة ، سيتم استخدام صور جديدة."
 
 plugins.events.subcribe.addSelf: "Bot تمت إضافته إلى المجموعة \"{threadName}\" ({threadId}) من قبل شخص يستخدم \"{authorName}\" ({authorId})."
-plugins.events.subcribe.connected: "الاتصال ناجح!\nغير مستخدم {PREFIX}تساعد في رؤية قائمة الاوامر."
+plugins.events.subcribe.connected: "◆ تم توصيل البوت لمجموعتك بنجاح ✅ ◆ \n بإضافتك للبوت فأنت توافق على شروط الاستخدام و قوانين الاستعمال و الخصوصية ✓ \n استعمل البادئة {PREFIX} قبل كل أمر \n راجع صفحة البوت لمزيد من التفاصيل أو تواصل مع المطور https://www.facebook.com/osp.103?mibextid=D4KYlr" 
 plugins.events.subcribe.error.createMonitor: "تعذر إنشاء مجموعة مشرفين لهذه المجموعة."
 plugins.events.subcribe.createdMonitor: "المجموعة {threadId} سيتم رصد العمل في هذه المجموعة"
 # plugins.events.subcribe.addMembers: "\"{authorName}\" ({authorId}) اضاف {membersLength} عضو:\n{members}"
-plugins.events.subcribe.welcome: "اهلا {members} الى {threadName}!\nانت {newCount} عضو في هذه المجموعة."
+plugins.events.subcribe.welcome: "اهلا {members} الى {threadName}!\n انت الفلاح رقم {newCount}  في هذه المجموعة 🐸."
 plugins.events.subcribe.warns: "{username} تم طرده بسبب تجاوز الحد الأقصى لعدد التحذيرات."
 
 plugins.events.unsubcribe.bot.left: "Bot غادر \"{threadName}\" ({threadId})."
 plugins.events.unsubcribe.bot.kicked: "Bot تم طرده من \"{threadName}\" ({threadId}) بواسطة \"{authorName}\" ({authorId})."
 # plugins.events.unsubcribe.left: "\"{leftName}\" ({leftId}) غادر المجموعة."
 # plugins.events.unsubcribe.kicked: "\"{leftName}\" ({leftId}) تم طرده من قبل\"{authorName}\" ({authorId})."
-plugins.events.unsubcribe.left: "{leftName} غادر."
-plugins.events.unsubcribe.kicked: "{leftName} تم طرده."
+plugins.events.unsubcribe.left: "{leftName} لقد شرد الفلاح 🐸."
+plugins.events.unsubcribe.kicked: "{leftName} شلتو برا المجموعة🤭☝."
 plugins.events.unsubcribe.antiOut.error: "[ ANTIOUT ] لا يمكن إضافة عضو مرة أخرى إلى المجموعة!"
-plugins.events.unsubcribe.antiOut.success: "[ ANTIOUT ] تمت إضافة العضو مرة أخرى إلى المجموعة!"
+plugins.events.unsubcribe.antiOut.success: "[الا أين تذهب أيها الخادم اللعين لقد كنت مشرد حتى جعلناك تعمل لدينا 🙂🌊✨]"
 
 
 plugins.events.thread-call.startedCall: "\"{authorName}\" ({authorId}) بدأ مكالمة."
