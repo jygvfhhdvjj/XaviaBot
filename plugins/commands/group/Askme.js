@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
 	name: "صراحة",
 	aliases:["أسئلني","صراحه"], 
 	description: "أسئلة عشوائية يطرحها لك البوت، أجب عليها بكل صراحة. ", 
