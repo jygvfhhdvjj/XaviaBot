@@ -1,10 +1,10 @@
 const config = {
-    name: "settings",
+    name: "اعدادات",
     aliases: ["setting"],
-    description: "Settings for better group management",
+    description: "اعدادات المجموعة",
     usage: "",
     cooldown: 3,
-    permissions: [1],
+    permissions: [1,2],
     credits: "XaviaTeam",
 };
 
