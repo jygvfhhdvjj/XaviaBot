@@ -1,13 +1,13 @@
 const config = {
-    name: "help",
+    name: "مساعدة",
     _name: {
         "ar_SY": "الاوامر"
     },
-    aliases: ["cmds", "commands"],
+    aliases: ["اوامر", "الاوامر","مساعده"],
     version: "1.0.3",
-    description: "Show all commands or command details",
-    usage: "[command] (optional)",
-    credits: "XaviaTeam"
+    description: "عرض كل أوامر البوت مع وصف استخدامها. ",
+    usage: "[الأمر] (اختياري)",
+    credits: "XaviaTeam "
 }
 
 const langData = {
@@ -48,7 +48,7 @@ const langData = {
         "2": "Quản trị bot"
     },
     "ar_SY": {
-        "help.list": "{list}\n\n⇒ المجموع: {total} الاوامر\n⇒ يستخدم {syntax} [امر] لمزيد من المعلومات حول الأمر.",
+        "help.list": "{list}\n\n🔰⇒ المجموع: {total} الاوامر\n🔰⇒ يستخدم {syntax} [امر] لمزيد من المعلومات حول الأمر\n🔰⇒ المطور  : يوسف الناير\n🔰⇒ للتواصل: https://www.facebook.com/osp.103?mibextid=D4KYlr",
         "help.commandNotExists": "امر {command} غير موجود.",
         "help.commandDetails": `
             ⇒ اسم: {name}
@@ -58,7 +58,7 @@ const langData = {
             ⇒ الصلاحيات: {permissions}
             ⇒ فئة: {category}
             ⇒ وقت الانتظار: {cooldown}
-            ⇒ الاعتمادات: {credits}
+            ⇒🔰 المطور: يوسف الناير 
         `,
         "0": "عضو",
         "1": "إدارة المجموعة",
@@ -93,9 +93,8 @@ async function onCall({ message, args, getLang, userPermissions, prefix }) {
         }
 
         let list = Object.keys(commands)
-            .map(category => `⌈ ${category.toUpperCase()} ⌋\n${commands[category].join(", ")}`)
+            .map(category => `⌈ ${category.toUpperCase()} ⌋\n${commands[category].join(" \n 💠    ")}`)
             .join("\n\n");
-
         message.reply(getLang("help.list", {
             total: Object.values(commands).map(e => e.length).reduce((a, b) => a + b, 0),
             list,
@@ -129,4 +128,4 @@ export default {
     config,
     langData,
     onCall
-}
+                }
