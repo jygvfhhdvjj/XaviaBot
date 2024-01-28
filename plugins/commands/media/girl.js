@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "girl",
     aliases: ["gai"],
     credits: "XaviaTeam"
