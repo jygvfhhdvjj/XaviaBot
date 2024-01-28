@@ -1,4 +1,4 @@
-import Bard from "bard-ai";
+/*import Bard from "bard-ai";
 import path from "path";
 
 const config = {
