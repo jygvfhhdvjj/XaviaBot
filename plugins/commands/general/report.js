@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "report",
     description: "report to mods",
     usage: "[text/attachment/reply]",
