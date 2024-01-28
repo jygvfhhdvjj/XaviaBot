@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "threadnoti",
     permissions: [1, 2],
     description: "Turn on/off thread notification for yourself",
