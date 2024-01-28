@@ -1,8 +1,8 @@
 import { join } from 'path';
 
 const config = {
-    name: "avatar",
-    aliases: ["avt", "profileImage"],
+    name: "بروفايل",
+    aliases: ["برو", "profileImage"],
     description: "Get profile image of a user",
     usage: "<reply/tag/none>",
     credits: "XaviaTeam"
