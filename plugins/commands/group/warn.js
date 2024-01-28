@@ -1,5 +1,5 @@
 const config = {
-    name: "warn",
+    name: "تحذير",
     description: "warn user",
     usage: "<reset> <@tag/reply> <reason>",
     cooldown: 3,
