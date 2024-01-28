@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "pooh",
     description: "pooh meme maker",
     usage: "[text1] | [text2]",
