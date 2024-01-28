@@ -1,5 +1,5 @@
 const config = {
-    name: "rules",
+    name: "القواعد",
     aliases: ["rule"],
     description: "Setting rules for group",
     usage: "[add/remove] [rule]",
