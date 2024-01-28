@@ -1,5 +1,5 @@
 const config = {
-    name: "note",
+    name: "ملاحظة",
     description: "note a message",
     usage: "[reply]",
     cooldown: 3,
