@@ -1,5 +1,6 @@
+
 const config = {
-    name: "ninoteach",
+    name: "تعليم",
     aliases: ["teach"],
     description: "Teach Nino",
     usage: "[text] => [reply]",
@@ -34,32 +35,3 @@ const langData = {
 
 async function onCall({ message, args, getLang }) {
     const arrow = args.indexOf("=>");
-    if (arrow == -1) return message.reply(getLang("wrongSyntax"));
-
-
-    const key = args.slice(0, arrow).join(" ");
-    const value = args.slice(arrow + 1).join(" ");
-
-    if (!key || !value) return message.reply(getLang("missingInput"));
-    global
-        .GET(`${global.xva_api.main}/nino/add?key=${encodeURIComponent(key)}&value=${encodeURIComponent(value)}`)
-        .then((res) => {
-            const { data } = res;
-            const { status } = data;
-
-            if (status == 0 || status == 1) {
-                return message.reply(getLang("succeed"));
-            } else {
-                return message.reply(getLang("failed"));
-            }
-        })
-        .catch((err) => {
-            return message.reply(getLang("error"));
-        });
-}
-
-export default {
-    config,
-    langData,
-    onCall
-}
