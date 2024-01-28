@@ -1,4 +1,4 @@
-const config = {
+/*const config = {
     name: "streak",
     description: "Day counting...",
     usage: "[start/set/relapse/stop]",
