@@ -1,10 +1,10 @@
 const _24HOURs = 86400000;
 
 const config = {
-    name: "daily",
-    aliases: ["claim"],
+    name: "اليومية",
+    aliases: ["claim","يومية"],
     description: "Claim daily reward",
-    credits: "XaviaTeam",
+    credits: "XaviaTeam | KG SOFT",
     extra: {
         min: 300,
         max: 1000
@@ -27,7 +27,7 @@ const langData = {
     "ar_SY": {
         "daily.selfNoData": "البيانات الخاصة بك ليست جاهزة",
         "daily.alreadyClaimed": "لقد طالبت بالفعل على مكافأتك اليومية ، يمكنك المطالبة مرة أخرى في {time}",
-        "daily.successfullyClaimed": "لقد طالبت بمكافأتك اليومية البالغة {amount}XC",
+        "daily.successfullyClaimed": "لقد طالبت بمكافأتك اليومية البالغة {amount}KC",
         "daily.failed": "فشل"
     }
 }
@@ -58,3 +58,5 @@ export default {
     langData,
     onCall
 }
+
+
